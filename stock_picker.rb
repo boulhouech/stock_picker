@@ -5,7 +5,9 @@ def stock_picker(prices)
   best_days = [nil, nil]
 
   prices.each_with_index do |price, index|
-    if
-
+    next if index == 0
+    if price < min_price
+      min_price = price
+      min_price_index = index
   end
 end
