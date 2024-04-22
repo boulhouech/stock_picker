@@ -20,8 +20,14 @@ def stock_picker(prices)
   end
 
   best_days.any? ? best_days : nil
+end
 
+stock_prices = [100, 180, 260, 310, 40, 535, 695]
 
+result = stock_picker(stock_prices)
 
-
+if result
+  puts "Buy on day #{result[0]}, sell on day #{result[1]}"
+else
+  puts "No profitable trading opportunity found"
 end
