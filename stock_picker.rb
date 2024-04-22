@@ -17,6 +17,9 @@ def stock_picker(prices)
   if profit > max_profit
     max_profit = profit
     best_days[min_price_index, index]
+  end
+
+  best_days.any? ? best_days : nil
 
 
 
